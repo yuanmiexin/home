@@ -1,0 +1,29 @@
+<?php
+
+namespace app\admin\controller;
+
+use think\Controller;
+use think\Request;
+
+class Index extends Controller
+{
+    /**
+     * 显示资源列表
+     *
+     * @return \think\Response
+     */
+    public function index()
+    {
+        return $this->fetch();
+    }
+
+
+    public function test()
+    {
+       \phpmailer\Email::send('fengzhixueyi_908@163.com','你好','dfadfdafdf');
+
+    }
+
+
+
+}
